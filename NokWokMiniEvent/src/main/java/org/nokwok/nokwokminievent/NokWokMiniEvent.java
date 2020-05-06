@@ -9,6 +9,7 @@ public final class NokWokMiniEvent extends JavaPlugin {
     public void onEnable() {
         System.out.println("Event plugin started successfully!");
         getServer().getPluginManager().registerEvents(new DamageEvent(), this);
+        getServer().getPluginManager().registerEvents(new ChatEvent(), this);
     }
 
 }
